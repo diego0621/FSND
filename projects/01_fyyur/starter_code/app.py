@@ -48,10 +48,10 @@ class Venue(db.Model):
     
     # TODO: implement any missing fields, as a database migration using Flask-Migrate
 
-    genres = db.Column(ARRAY(db.String()))
-    website = db.Column(db.String())
-    seeking_talent = db.Column(db.String())
-    seeking_description = db.Column(db.String())
+    genres = db.Column(db.String(120))
+    website = db.Column(db.String(120))
+    seeking_talent = db.Column(db.String(120))
+    seeking_description = db.Column(db.String(120))
 
 class Artist(db.Model):
     __tablename__ = 'Artist'
@@ -67,10 +67,10 @@ class Artist(db.Model):
 
     
     # TODO: implement any missing fields, as a database migration using Flask-Migrate
-    genres = db.Column(Array(db.String()))
-    website = db.Column(db.String())
-    seeking_venue = db.Column(db.String())
-    seeking_description = db.Column(db.String())
+    genres = db.Column(db.String(120))
+    website = db.Column(db.String(120))
+    seeking_venue = db.Column(db.String(120))
+    seeking_description = db.Column(db.String(120))
 
     
     # TODO Implement Show and Artist models, and complete all model relationships and properties, as a database migration.
